@@ -1,7 +1,7 @@
 /* eslint no-console: 0 */
 import {
   Pusher
-} from 'aemsync';
+} from 'aemsync--with-sling-option';
 import 'babel-core/register';
 import 'babel-polyfill';
 import Queue from 'queue';
