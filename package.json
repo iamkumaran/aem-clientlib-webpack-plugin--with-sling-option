@@ -1,0 +1,61 @@
+{
+  "name": "aem-clientlib-webpack-plugin--with-sling-option",
+  "version": "1.6.0",
+  "description": "A webpack plugin to generate clientlib structure based a clientlib.config.js file",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "watch": "./node_modules/.bin/babel src --out-dir lib --watch",
+    "lint": "./node_modules/.bin/eslint ./src/**.js",
+    "lint:fix": "./node_modules/.bin/eslint ./src/**.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aem",
+    "clientlib",
+    "webpack",
+    "plugin"
+  ],
+  "homepage": "https://github.com/iamkumaran/aem-clientlib-webpack-plugin--with-sling-option",
+  "bugs": {
+    "url": "https://github.com/iamkumaran/aem-clientlib-webpack-plugin--with-sling-option/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamkumaran/aem-clientlib-webpack-plugin--with-sling-option.git"
+  },
+  "author": "Muthu Kumaran",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-async-await": "^0.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "glob-fs": "^0.1.7"
+  },
+  "dependencies": {
+    "aemsync--with-sling-option": "^2.0.1",
+    "async": "^2.6.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "chalk": "^2.3.0",
+    "debug": "^3.1.0",
+    "eslint": "^4.15.0",
+    "filesize": "^3.6.0",
+    "fs-extra": "^5.0.0",
+    "glob": "^7.1.2",
+    "lodash": "^4.17.4",
+    "micromatch": "^3.1.5",
+    "moment": "^2.20.1",
+    "node-watch": "^0.5.5",
+    "npmlog": "^4.1.2",
+    "queue": "^4.4.2"
+  }
+}
