@@ -76,7 +76,7 @@ export default class AEMClientLibGeneratorPlugin {
       }
       this.builder.build(compilation, compiler);
       setTimeout(() => {
-		console.log('Pusing files to Clientlibs folder and slinging to AEM instance...');
+		console.log('Pushing files to Clientlibs folder and slinging to AEM instance...');
         this.generateClientLibs(callback);
       }, 1000);
     });
@@ -145,8 +145,12 @@ export default class AEMClientLibGeneratorPlugin {
 		
 		if (process.env.NODE_ENV === 'production') {
 			console.log('Production build done');
+			console.log('Exiting.......');
 			process.exit(0);
 			return true;
+		} else {
+			console.log('AEM Sync completed');
+			console.log('Waiting for files changes...');
 		}
         return true;
       })
